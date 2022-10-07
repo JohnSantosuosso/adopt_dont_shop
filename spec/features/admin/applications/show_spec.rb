@@ -55,6 +55,7 @@ RSpec.describe 'Admin/applications#show' do
 
     within("#pet-#{pet_application_1.id}") do
       expect(page).to have_content("Fido")
+      #expect page to have button approve/reject
 
       click_button "Approve"
 

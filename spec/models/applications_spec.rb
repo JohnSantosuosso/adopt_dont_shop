@@ -78,6 +78,7 @@ RSpec.describe Application do
     describe '#pets_no_longer_adoptable' do
       it 'should change the pet status to "No Longer Adoptable"' do
         @application_3.pets_no_longer_adoptable
+        require 'pry'; binding.pry 
         expect(@application_1.pets[0].adoptable).to eq(false)
         expect(@application_2.pets[0].adoptable).to eq(false)
         expect(@application_3.pets[0].adoptable).to eq(false)
