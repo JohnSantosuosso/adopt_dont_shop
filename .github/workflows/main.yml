@@ -34,7 +34,6 @@ jobs:
           DATABASE_URL: postgres://postgres:@localhost:5432/test
           REDIS_URL: redis://localhost:6379/0
           RAILS_ENV: test
-          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
         run: |
           sudo apt-get -yqq install libpq-dev
